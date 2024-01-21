@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lekhok - Post</title>
+    <!-- meta tags -->
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <!-- favicon -->
+    <link rel="icon" href="images/favicon.ico" />
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1
+/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <!-- lineicons css -->
+    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
+    <!-- owl carousel css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+      integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <!-- facebook widget plugin -->
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v17.0"
+      nonce="FjqaFwYL"
+    ></script>
+    <!-- facebook widget plugin end -->
+    <!-- page loader -->
+    <div
+      id="loader-wrapper"
+      class="bg-white position-fixed z-3 w-100 h-100 text-center"
+    >
+      <div class="spinner-border mt-5" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+    <!-- page loader end -->
+    <!-- header section -->
+    <header id="header-section" class="fixed-top">
+      <!-- navigation -->
+      <nav
+        id="navigation"
+        class="navbar navbar-expand-lg bg-white border-bottom"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" width="150" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav m-auto my-2 my-lg-0"
+              style="--bs-scroll-height: 100px"
+            >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle d-flex align-items-center"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Topics<i class="lni lni-chevron-down ms-1"></i>
+                </a>
+                <ul class="dropdown-menu animate slideIn">
+                  <li>
+                    <a class="dropdown-item" href="topic.html">Business</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="topic.html">Finance</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="topic.html">Technology</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="topic.html">Travel</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="topic.html">Lifestyle</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="topic.html">Fitness</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="about.html"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="Contact.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-primary d-flex align-items-center"
+                type="submit"
+              >
+                <i class="lni lni-search fs-5"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- navigation end -->
+    </header>
+    <!-- header section end -->
+    <!-- main contents -->
+    <main id="main-contents" style="margin-top: 90px">
+      <!-- single post and widgets section -->
+      <section id="single-post-widgets-section" class="py-5">
+        <div class="container">
+          <div class="row">
+            <!-- single post -->
+            <div class="col-lg-8 mb-5 mb-lg-0 pb-5 pb-lg-0">
+              <article class="single-post">
+                <span class="text-secondary d-flex align-items-center mb-2"
+                  ><i class="lni lni-calendar me-1"></i>20-May-2023</span
+                >
+                <h1 class="fw-bold fs-3">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </h1>
+                <div class="post-info mb-4">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <a
+                        href="about.html"
+                        class="link-secondary text-decoration-none d-flex align-items-center"
+                        ><i class="lni lni-user me-1"></i>D. H. Shuvo</a
+                      >
+                    </div>
+                    <div class="col-auto">
+                      <a
+                        href="about.html"
+                        class="link-secondary text-decoration-none d-flex align-items-center"
+                        ><i class="lni lni-folder me-1"></i>Nature</a
+                      >
+                    </div>
+                    <div class="col-auto ms-auto">
+                      <a
+                        href="#comments"
+                        class="text-decoration-none d-flex align-items-center fs-5"
+                        ><i class="lni lni-comments me-1"></i>12</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <img
+                  class="w-100 border mb-5 rounded"
+                  src="https://images.unsplash.com/photo-1691000367560-b7f97ae35fa8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                  alt=""
+                />
+                <div class="article">
+                  <p>
+                    Enim mollit nostrud consequat ullamco esse sit sint
+                    voluptate voluptate quis labore fugiat sint in dolor mollit
+                    proident. Deserunt deserunt incididunt proident irure culpa
+                    enim duis qui sit cillum veniam voluptate. Eu commodo nulla
+                    qui aliqua aute proident reprehenderit excepteur ad elit
+                    deserunt dolor sint culpa. Cillum nulla in ullamco non ipsum
+                    Lorem labore irure culpa. Excepteur ex amet duis incididunt
+                    voluptate consequat tempor do reprehenderit commodo ullamco
+                    commodo culpa mollit enim. Voluptate anim do pariatur Lorem
+                    Lorem deserunt non nulla dolor aliqua voluptate laboris ad.
+                    Incididunt consequat ullamco cillum deserunt excepteur culpa
+                    cillum duis nostrud et dolor officia. Ex consequat aliqua
+                    quis consectetur sint adipisicing voluptate elit dolore
+                    fugiat id. Magna ad officia occaecat minim culpa Lorem
+                    dolore et tempor Lorem irure. Aliquip nostrud duis aliquip
+                    eu mollit amet velit culpa ut culpa ullamco.
+                  </p>
+
+                  <p>
+                    Deserunt proident adipisicing minim velit elit elit dolor
+                    eiusmod non occaecat. Minim ex ea id ut officia dolor
+                    laborum eiusmod minim non id cupidatat ea nostrud excepteur.
+                    Commodo fugiat proident in irure incididunt reprehenderit
+                    cillum nostrud reprehenderit adipisicing aliquip irure
+                    adipisicing. Nisi amet mollit Lorem irure dolore elit aute
+                    Lorem sunt nulla proident cupidatat reprehenderit ipsum
+                    cupidatat excepteur. Fugiat eiusmod incididunt non magna
+                    incididunt aute et occaecat enim. Laborum adipisicing non
+                    tempor exercitation exercitation incididunt Lorem non
+                    adipisicing aliquip dolor nulla ad tempor fugiat laboris.
+                    Nostrud nulla nisi ullamco magna est id dolore do qui
+                    veniam. Velit anim aute ex laboris nostrud in sit ipsum
+                    proident duis cupidatat laboris. Incididunt dolore minim
+                    excepteur sint nisi et duis adipisicing do laboris ullamco
+                    consequat elit.
+                  </p>
+
+                  <p>
+                    Enim cillum adipisicing tempor deserunt sunt deserunt mollit
+                    commodo laboris. Adipisicing proident sit officia labore sit
+                    fugiat mollit sunt aliqua minim culpa officia officia
+                    ullamco quis nostrud magna. Sunt Lorem reprehenderit
+                    cupidatat aliqua est sit et ut enim dolore elit nostrud ut
+                    aliquip esse magna aliqua et culpa. Anim in fugiat minim
+                    veniam laborum duis eiusmod eiusmod mollit voluptate amet
+                    proident veniam nostrud sit fugiat cillum amet. Proident
+                    duis est ipsum ullamco sit proident velit elit nisi quis
+                    anim adipisicing. Commodo tempor consequat aliqua qui
+                    cupidatat Lorem fugiat esse proident pariatur anim excepteur
+                    esse ex consectetur in. Amet commodo cillum enim do proident
+                    magna ullamco sunt consectetur Lorem laborum non aliquip
+                    voluptate. Labore sit est officia duis ipsum est sit ex
+                    occaecat dolore duis nisi laborum minim cupidatat consequat
+                    reprehenderit.
+                  </p>
+
+                  <p>
+                    Duis nostrud anim id aliqua aliqua et incididunt velit qui
+                    in dolore aliquip. Tempor et ipsum consectetur aute ex
+                    laborum ex incididunt qui anim voluptate non duis qui in
+                    commodo. Ipsum ipsum eu sit magna excepteur culpa officia
+                    nostrud ad ea occaecat enim. Irure exercitation ipsum et
+                    irure id tempor nostrud nostrud dolor eu aliqua do enim quis
+                    cupidatat cupidatat dolor ex. Enim dolore est deserunt ea in
+                    aliqua consectetur non nisi excepteur sunt cupidatat
+                    incididunt fugiat dolore est et labore.
+                  </p>
+
+                  <p>
+                    Ea id duis culpa officia pariatur ad adipisicing sit eiusmod
+                    nostrud. Commodo eiusmod ipsum ad pariatur minim deserunt
+                    magna sunt laborum ipsum dolor fugiat esse culpa magna. Nisi
+                    ad amet aliqua aute aliquip ea nisi esse aliqua veniam
+                    laboris. In labore ipsum cupidatat eiusmod cupidatat Lorem
+                    laborum exercitation ea nostrud sunt nulla veniam. Eu in et
+                    mollit qui reprehenderit esse aliqua proident elit enim nisi
+                    non sint deserunt sunt. Lorem consectetur occaecat culpa do
+                    irure reprehenderit irure proident excepteur velit. Pariatur
+                    pariatur exercitation velit deserunt tempor exercitation ex
+                    amet veniam Lorem sunt commodo nisi occaecat ex.
+                  </p>
+
+                  <p>
+                    Cillum ad cupidatat nulla magna elit enim ut excepteur
+                    eiusmod et nulla sunt sint sunt laborum elit. Amet ea sunt
+                    incididunt adipisicing Lorem enim in proident quis Lorem qui
+                    ea. Sit culpa do sint nostrud excepteur id duis nulla
+                    exercitation consequat tempor. Cillum eu sunt occaecat
+                    excepteur irure incididunt sunt dolor anim consectetur sit
+                    aliquip anim minim labore pariatur aliqua. Laboris excepteur
+                    aliquip velit qui sit nisi eu duis exercitation labore esse
+                    minim do Lorem tempor eu. Exercitation fugiat excepteur
+                    aliquip aliqua ullamco aliqua aute velit sint adipisicing in
+                    esse consectetur ad sit ea eiusmod. Ullamco eiusmod et esse
+                    voluptate proident irure et velit Lorem eu. Magna ullamco
+                    non ea cupidatat exercitation nulla velit est in quis velit
+                    consectetur ullamco.
+                  </p>
+
+                  <p>
+                    Anim sunt exercitation ullamco adipisicing amet voluptate
+                    ipsum culpa non irure ad fugiat aliquip officia. Sint esse
+                    irure magna duis dolor laborum sint adipisicing amet
+                    pariatur. Ad culpa adipisicing id cillum cupidatat voluptate
+                    non occaecat sint ipsum mollit adipisicing exercitation et.
+                    Cupidatat eiusmod excepteur reprehenderit et ex cupidatat
+                    nisi excepteur est nisi amet do consequat nostrud officia
+                    consectetur exercitation incididunt. Irure irure ea ex
+                    aliqua consectetur culpa eu est non excepteur adipisicing.
+                    Proident fugiat eiusmod magna ea sint mollit id exercitation
+                    esse irure aliqua reprehenderit fugiat labore irure do
+                    incididunt culpa.
+                  </p>
+
+                  <p>
+                    Est velit cillum magna qui ut dolor magna eiusmod commodo id
+                    velit quis occaecat anim eiusmod ut reprehenderit ea. Tempor
+                    non exercitation aliqua est mollit aliqua amet pariatur
+                    nulla amet commodo excepteur sint occaecat laborum ullamco.
+                    Irure ad ipsum esse adipisicing elit eu eu occaecat enim est
+                    veniam ex. Ex excepteur id eu dolore exercitation anim magna
+                    Lorem amet anim amet do. Dolore incididunt excepteur tempor
+                    cillum ea magna occaecat anim laboris. Eiusmod ipsum
+                    cupidatat sit duis dolor consectetur elit cupidatat Lorem
+                    anim velit ullamco velit et est esse ex ut Lorem. Ad
+                    voluptate labore qui nisi consequat laboris consectetur ut
+                    aliquip laboris est exercitation culpa esse occaecat duis.
+                  </p>
+
+                  <p>
+                    Qui et enim consequat eiusmod sit eu id ipsum nulla cillum
+                    incididunt aliquip adipisicing consequat ea nostrud. Id est
+                    consequat proident aliqua reprehenderit aliqua incididunt
+                    mollit pariatur amet sit reprehenderit aliquip. Pariatur
+                    laboris ullamco occaecat non et pariatur in adipisicing
+                    adipisicing. Voluptate duis non nisi sunt est fugiat cillum
+                    eu ullamco labore sit nostrud mollit nostrud excepteur qui
+                    ullamco. Eiusmod aliqua ipsum dolor pariatur reprehenderit
+                    incididunt sit Lorem culpa labore occaecat incididunt.
+                  </p>
+
+                  <p>
+                    Esse dolore occaecat velit laboris laborum sit occaecat sint
+                    reprehenderit irure excepteur occaecat cillum dolore cillum
+                    nisi. Adipisicing voluptate commodo laboris proident magna
+                    consequat consequat dolore aliquip aliqua anim. Ad
+                    reprehenderit cupidatat Lorem fugiat Lorem ullamco et
+                    laboris minim. Incididunt consequat labore ullamco Lorem ut
+                    adipisicing culpa pariatur Lorem in sint occaecat labore
+                    excepteur culpa nostrud sit mollit. Aliqua cupidatat ea
+                    proident minim sint cupidatat dolor fugiat aute.
+                    Reprehenderit dolor laborum ut occaecat ullamco do irure
+                    eiusmod reprehenderit proident ea consectetur amet in dolor
+                    commodo cillum nulla. Incididunt ex ad minim sit deserunt
+                    culpa ut exercitation laboris nostrud nostrud sunt cillum
+                    qui anim consectetur. Ad sunt aliqua ullamco ad sit enim
+                    aliquip mollit nostrud ea.
+                  </p>
+                </div>
+              </article>
+              <!-- comments section -->
+              <div class="comments-section my-5">
+                <!-- post comment -->
+                <div class="post-comment mb-5">
+                  <h4 class="title my-3">Comment on this post</h4>
+                  <form action="">
+                    <div class="row">
+                      <div class="col-lg-6 mb-3">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="First name"
+                        />
+                      </div>
+                      <div class="col-lg-6 mb-3">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Last name"
+                        />
+                      </div>
+                      <div class="col-12 mb-3">
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="E-mail Address"
+                        />
+                      </div>
+                      <div class="col-12 mb-3">
+                        <textarea
+                          class="form-control"
+                          placeholder="Write your comment"
+                          name=""
+                          id=""
+                          rows="5"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="text-end">
+                      <button type="submit" class="btn btn-primary">
+                        Comment
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <!-- post comment end -->
+                <!-- comments -->
+                <div id="comments">
+                  <h4 class="title my-3">Comments</h4>
+                  <ul class="ps-0">
+                    <!-- single comment -->
+                    <li class="list-unstyled mb-4">
+                      <div class="comment bg-light border rounded p-4">
+                        <h5 class="fs-6 fw-bold d-flex align-items-center">
+                          <i class="lni lni-user me-2"></i>Shuvo Hossen
+                        </h5>
+                        <p class="mb-2">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit.
+                        </p>
+                        <a
+                          class="text-decoration-none d-flex align-items-center link-secondary"
+                          href=""
+                          ><i class="lni lni-comments me-1"></i>Reply</a
+                        >
+                      </div>
+                      <ul class="ms-3 mt-4">
+                        <li class="list-unstyled">
+                          <div class="bg-light border rounded p-4">
+                            <h5 class="fs-6 fw-bold d-flex align-items-center">
+                              <i class="lni lni-user me-2"></i>D. H. Shuvo<span
+                                class="badge text-bg-primary ms-2"
+                                >Author</span
+                              >
+                            </h5>
+                            <p class="mb-2">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit.
+                            </p>
+                            <a
+                              class="text-decoration-none d-flex align-items-center link-secondary"
+                              href=""
+                              ><i class="lni lni-comments me-1"></i>Reply</a
+                            >
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <!-- single comment end -->
+                    <!-- single comment -->
+                    <li class="list-unstyled mb-4">
+                      <div class="comment bg-light border rounded p-4">
+                        <h5 class="fs-6 fw-bold d-flex align-items-center">
+                          <i class="lni lni-user me-2"></i>Shuvo Hossen
+                        </h5>
+                        <p class="mb-2">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit.
+                        </p>
+                        <a
+                          class="text-decoration-none d-flex align-items-center link-secondary"
+                          href=""
+                          ><i class="lni lni-comments me-1"></i>Reply</a
+                        >
+                      </div>
+                    </li>
+                    <!-- single comment end -->
+                    <!-- single comment -->
+                    <li class="list-unstyled">
+                      <div class="comment bg-light border rounded p-4">
+                        <h5 class="fs-6 fw-bold d-flex align-items-center">
+                          <i class="lni lni-user me-2"></i>Shuvo Hossen
+                        </h5>
+                        <p class="mb-2">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit.
+                        </p>
+                        <a
+                          class="text-decoration-none d-flex align-items-center link-secondary"
+                          href=""
+                          ><i class="lni lni-comments me-1"></i>Reply</a
+                        >
+                      </div>
+                    </li>
+                    <!-- single comment end -->
+                  </ul>
+                </div>
+                <!-- comments end -->
+              </div>
+              <!-- comments section end -->
+            </div>
+            <!-- single post end -->
+            <!-- sidebar -->
+            <div class="col-lg-4 ps-lg-5">
+              <div class="sidebar">
+                <!-- subscribe widget -->
+                <div class="subscribe-widget mb-4 pb-4">
+                  <h4 class="sidebar-title my-3">Newsletter</h4>
+                  <form class="d-flex" action="">
+                    <input
+                      class="form-control me-2"
+                      type="email"
+                      placeholder="Email Address"
+                    />
+                    <button class="btn btn-primary" type="submit">
+                      Subscribe
+                    </button>
+                  </form>
+                </div>
+                <!-- subscribe widget end -->
+                <!-- facebook page widget -->
+                <div class="facebook-page-widget mb-4 pb-4">
+                  <h4 class="sidebar-title my-3">Follow me on Facebook</h4>
+                  <div
+                    class="fb-page"
+                    data-href="https://www.facebook.com/facebook"
+                    data-small-header="false"
+                    data-adapt-container-width="true"
+                    data-hide-cover="false"
+                    data-show-facepile="true"
+                  >
+                    <blockquote
+                      cite="https://www.facebook.com/facebook"
+                      class="fb-xfbml-parse-ignore"
+                    >
+                      <a href="https://www.facebook.com/facebook">Facebook</a>
+                    </blockquote>
+                  </div>
+                </div>
+                <!-- facebook page widget end -->
+                <!-- popular posts widget -->
+                <div class="popular-posts-widget mb-4 pb-4">
+                  <h4 class="sidebar-title my-3">Popular Posts</h4>
+                  <ul class="bg-light p-3 border rounded">
+                    <!-- single popular post -->
+                    <li
+                      class="d-flex align-items-center border-bottom pb-3 mb-3"
+                    >
+                      <a href="single-post.html">
+                        <img
+                          src="https://images.unsplash.com/photo-1690263914767-963579f9620c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60"
+                          class="border rounded me-2"
+                          width="80px"
+                          height="80px"
+                          style="object-fit: cover"
+                          alt=""
+                        />
+                      </a>
+                      <div class="post-info">
+                        <a
+                          class="text-decoration-none link-dark"
+                          href="single-post.html"
+                        >
+                          <h3 class="mb-2" style="font-size: 16px">
+                            Lorem ipsum dolor sit amet consectetur.
+                          </h3>
+                        </a>
+                        <div class="d-flex justify-content-between">
+                          <span
+                            class="text-secondary d-flex align-items-center"
+                            style="font-size: 14px"
+                            ><i class="lni lni-calendar me-1"></i
+                            >11-March-2022</span
+                          >
+                          <span class="d-flex align-items-center text-secondary"
+                            ><i class="lni lni-comments me-1"></i>320</span
+                          >
+                        </div>
+                      </div>
+                    </li>
+                    <!-- single popular post end -->
+                    <!-- single popular post -->
+                    <li
+                      class="d-flex align-items-center border-bottom pb-3 mb-3"
+                    >
+                      <a href="single-post.html">
+                        <img
+                          src="https://images.unsplash.com/photo-1689890076926-afb4add0bc86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMzJ8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+                          class="border rounded me-2"
+                          width="80px"
+                          height="80px"
+                          style="object-fit: cover"
+                          alt=""
+                        />
+                      </a>
+                      <div class="post-info">
+                        <a
+                          class="text-decoration-none link-dark"
+                          href="single-post.html"
+                        >
+                          <h3 class="mb-2" style="font-size: 16px">
+                            Lorem ipsum dolor sit amet consectetur.
+                          </h3>
+                        </a>
+                        <div class="d-flex justify-content-between">
+                          <span
+                            class="text-secondary d-flex align-items-center"
+                            style="font-size: 14px"
+                            ><i class="lni lni-calendar me-1"></i
+                            >11-March-2022</span
+                          >
+                          <span class="d-flex align-items-center text-secondary"
+                            ><i class="lni lni-comments me-1"></i>320</span
+                          >
+                        </div>
+                      </div>
+                    </li>
+                    <!-- single popular post end -->
+                    <!-- single popular post -->
+                    <li class="d-flex align-items-center">
+                      <a href="single-post.html">
+                        <img
+                          src="https://images.unsplash.com/photo-1682417844065-07961597146e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60"
+                          class="border rounded me-2"
+                          width="80px"
+                          height="80px"
+                          style="object-fit: cover"
+                          alt=""
+                        />
+                      </a>
+                      <div class="post-info">
+                        <a
+                          class="text-decoration-none link-dark"
+                          href="single-post.html"
+                        >
+                          <h3 class="mb-2" style="font-size: 16px">
+                            Lorem ipsum dolor sit amet consectetur.
+                          </h3>
+                        </a>
+                        <div class="d-flex justify-content-between">
+                          <span
+                            class="text-secondary d-flex align-items-center"
+                            style="font-size: 14px"
+                            ><i class="lni lni-calendar me-1"></i
+                            >11-March-2022</span
+                          >
+                          <span class="d-flex align-items-center text-secondary"
+                            ><i class="lni lni-comments me-1"></i>320</span
+                          >
+                        </div>
+                      </div>
+                    </li>
+                    <!-- single popular post end -->
+                  </ul>
+                </div>
+                <!-- popular posts widget end -->
+                <!-- topics widget -->
+                <div class="topics-widget pb-4 mb-4">
+                  <h4 class="sidebar-title my-3">Topics</h4>
+                  <div
+                    class="bg-light p-3 rounded border"
+                    style="padding-bottom: 10px !important"
+                  >
+                    <a
+                      href="topic.html"
+                      class="badge text-bg-dark text-decoration-none me-2 mb-2"
+                      >Fashion</a
+                    >
+                    <a
+                      href="topic.html"
+                      class="badge text-bg-dark text-decoration-none me-2 mb-2"
+                      >Finance</a
+                    >
+                    <a
+                      href="topic.html"
+                      class="badge text-bg-dark text-decoration-none me-2 mb-2"
+                      >Technology</a
+                    >
+                    <a
+                      href="topic.html"
+                      class="badge text-bg-dark text-decoration-none me-2 mb-2"
+                      >Nature</a
+                    >
+                    <a
+                      href="topic.html"
+                      class="badge text-bg-dark text-decoration-none me-2 mb-2"
+                      >Travel</a
+                    >
+                    <a
+                      href="topic.html"
+                      class="badge text-bg-dark text-decoration-none me-2 mb-2"
+                      >Lifestyle</a
+                    >
+                    <a
+                      href="topic.html"
+                      class="badge text-bg-dark text-decoration-none me-2 mb-2"
+                      >Business</a
+                    >
+                  </div>
+                </div>
+                <!-- topics widget end -->
+                <!-- top comments widget -->
+                <div class="top-comments-widget pb-4 mb-4">
+                  <h4 class="sidebar-title my-3">Top Comments</h4>
+                  <ul class="bg-light p-3 rounded border">
+                    <!-- single top comment -->
+                    <li
+                      class="text-decoration-none list-unstyled border-bottom pb-2 mb-2"
+                    >
+                      <a
+                        href="#"
+                        class="link-dark text-decoration-none"
+                        style="font-size: 14px"
+                        >Lorem ipsum dolor sit, amet consectetur
+                        adipisicing<span class="fs-5">...</span></a
+                      >
+                    </li>
+                    <!-- single top comment end -->
+                    <!-- single top comment -->
+                    <li
+                      class="text-decoration-none list-unstyled border-bottom pb-2 mb-2"
+                    >
+                      <a
+                        href="#"
+                        class="link-dark text-decoration-none"
+                        style="font-size: 14px"
+                        >Lorem ipsum dolor sit, amet consectetur
+                        adipisicing<span class="fs-5">...</span></a
+                      >
+                    </li>
+                    <!-- single top comment end -->
+                    <!-- single top comment -->
+                    <li class="text-decoration-none list-unstyled">
+                      <a
+                        href="#"
+                        class="link-dark text-decoration-none"
+                        style="font-size: 14px"
+                        >Lorem ipsum dolor sit, amet consectetur
+                        adipisicing<span class="fs-5">...</span></a
+                      >
+                    </li>
+                    <!-- single top comment end -->
+                  </ul>
+                </div>
+                <!-- top comments widget end -->
+                <!-- total visitors widget -->
+                <div class="total-visitors-widget">
+                  <h4 class="sidebar-title my-3">Total Visitors</h4>
+                  <div class="bg-light p-3 rounded border">
+                    <h5>15,235,532</h5>
+                  </div>
+                </div>
+                <!-- total visitors widget end -->
+              </div>
+            </div>
+            <!-- sidebar end -->
+          </div>
+        </div>
+      </section>
+      <!-- single post and widgets section end -->
+    </main>
+    <!-- main contents end -->
+    <!-- footer section -->
+    <footer id="footer-section" class="py-4 bg-light border-top">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-md-0 mb-4 text-center text-md-start">
+            <span class="text-secondary" style="font-size: 14px"
+              >&copy; <a href="about.html">D. H. Shuvo</a>, All Rights
+              Reserved</span
+            >
+          </div>
+          <div class="col-md-6 text-md-end text-center">
+            <a class="text-decoration-none link-secondary" href="#">
+              <i class="lni lni-facebook fs-4 me-2"></i>
+            </a>
+            <a class="text-decoration-none link-secondary" href="#">
+              <i class="lni lni-twitter fs-4 me-2"></i>
+            </a>
+            <a class="text-decoration-none link-secondary" href="#">
+              <i class="lni lni-instagram fs-4 me-2"></i>
+            </a>
+            <a class="text-decoration-none link-secondary" href="#">
+              <i class="lni lni-youtube fs-4 me-2"></i>
+            </a>
+            <a class="text-decoration-none link-secondary" href="#">
+              <i class="lni lni-linkedin fs-4"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section end -->
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0
+.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1
+/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- owl carousel js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- main js -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

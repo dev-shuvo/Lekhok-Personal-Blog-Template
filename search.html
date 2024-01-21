@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lekhok - Search</title>
+    <!-- meta tags -->
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <!-- favicon -->
+    <link rel="icon" href="images/favicon.ico" />
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1
+/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <!-- lineicons css -->
+    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
+    <!-- owl carousel css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+      integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <!-- facebook widget plugin -->
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v17.0"
+      nonce="FjqaFwYL"
+    ></script>
+    <!-- facebook widget plugin end -->
+    <!-- page loader -->
+    <div
+      id="loader-wrapper"
+      class="bg-white position-fixed z-3 w-100 h-100 text-center"
+    >
+      <div class="spinner-border mt-5" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+    <!-- page loader end -->
+    <!-- header section -->
+    <header id="header-section" class="fixed-top">
+      <!-- navigation -->
+      <nav
+        id="navigation"
+        class="navbar navbar-expand-lg bg-white border-bottom"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" width="150" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav m-auto my-2 my-lg-0"
+              style="--bs-scroll-height: 100px"
+            >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle d-flex align-items-center"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Topics<i class="lni lni-chevron-down ms-1"></i>
+                </a>
+                <ul class="dropdown-menu animate slideIn">
+                  <li>
+                    <a class="dropdown-item" href="topic.html">Business</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="topic.html">Finance</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="topic.html">Technology</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="topic.html">Travel</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="topic.html">Lifestyle</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="topic.html">Fitness</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="about.html"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="Contact.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-primary d-flex align-items-center"
+                type="submit"
+              >
+                <i class="lni lni-search fs-5"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- navigation end -->
+    </header>
+    <!-- header section end -->
+    <!-- main contents -->
+    <main id="main-contents" style="margin-top: 90px">
+      <!-- latest posts and widgets section -->
+      <section id="latest-posts-widgets-section" class="py-5">
+        <div class="container">
+          <div class="row">
+            <!-- latest posts -->
+            <div class="col-lg-8 mb-5 mb-lg-0 pb-5 pb-lg-0">
+              <div class="latest-posts">
+                <h4 class="my-3 fw-bold">
+                  Search Results: <span class="text-primary">Money</span>
+                </h4>
+                <!-- row -->
+                <div class="row">
+                  <!-- column 1 -->
+                  <div class="col-md-6">
+                    <!-- single latest post -->
+                    <div class="single-latest-post mb-4">
+                      <a href="single-post.html">
+                        <div class="card">
+                          <div class="card-img-wrapper">
+                            <img
+                              src="https://images.unsplash.com/photo-1687253946687-a3713aa25b2f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDQ1fFM0TUtMQXNCQjc0fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+                              class="card-img-top"
+                              alt="..."
+                            />
+                            <a
+                              href="topic.html"
+                              class="category d-flex align-items-center text-decoration-none badge text-bg-primary"
+                              ><i class="lni lni-folder me-1"></i>Fashion</a
+                            >
+                            <a
+                              class="comments d-flex align-items-center text-decoration-none badge text-bg-primary"
+                              href="#"
+                              ><i class="lni lni-comments me-1"></i>13</a
+                            >
+                          </div>
+                          <div class="card-body">
+                            <a
+                              class="text-decoration-none link-dark"
+                              href="single-post.html"
+                            >
+                              <h1
+                                class="card-title fw-bold"
+                                style="font-size: 22px"
+                              >
+                                Lorem ipsum dolor sit amet.
+                              </h1>
+                            </a>
+                            <div
+                              class="d-flex justify-content-between mb-2"
+                              style="font-size: 15px"
+                            >
+                              <span
+                                class="d-flex align-items-center text-secondary"
+                                ><i class="lni lni-calendar me-1"></i
+                                >10-January-2023</span
+                              >
+                              <a
+                                class="d-flex align-items-center text-decoration-none text-secondary"
+                                href="about.html"
+                                ><i class="lni lni-user me-1"></i>D. H. Shuvo</a
+                              >
+                            </div>
+                            <p class="card-text mt-3 text-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Reiciendis maiores eum temporibus voluptate
+                              non repellat doloremque voluptas, exercitationem
+                              tempore? Autem?
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <!-- single latest post end -->
+                    <!-- single latest post -->
+                    <div class="single-latest-post mb-4">
+                      <a href="single-post.html">
+                        <div class="card">
+                          <div class="card-img-wrapper">
+                            <img
+                              src="https://images.unsplash.com/photo-1689525394460-255f8b9bee4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDZ8YWV1NnJMLWo2ZXd8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                              class="card-img-top"
+                              alt="..."
+                            />
+                            <a
+                              href="topic.html"
+                              class="category d-flex align-items-center text-decoration-none badge text-bg-primary"
+                              ><i class="lni lni-folder me-1"></i>Business</a
+                            >
+                            <a
+                              class="comments d-flex align-items-center text-decoration-none badge text-bg-primary"
+                              href="#"
+                              ><i class="lni lni-comments me-1"></i>13</a
+                            >
+                          </div>
+                          <div class="card-body">
+                            <a
+                              class="text-decoration-none link-dark"
+                              href="single-post.html"
+                            >
+                              <h1
+                                class="card-title fw-bold"
+                                style="font-size: 22px"
+                              >
+                                Lorem ipsum dolor sit amet.
+                              </h1>
+                            </a>
+                            <div
+                              class="d-flex justify-content-between mb-2"
+                              style="font-size: 15px"
+                            >
+                              <span
+                                class="d-flex align-items-center text-secondary"
+                                ><i class="lni lni-calendar me-1"></i
+                                >10-January-2023</span
+                              >
+                              <a
+                                class="d-flex align-items-center text-decoration-none text-secondary"
+                                href="about.html"
+                                ><i class="lni lni-user me-1"></i>D. H. Shuvo</a
+                              >
+                            </div>
+                            <p class="card-text mt-3 text-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Reiciendis maiores eum temporibus voluptate
+                              non repellat doloremque voluptas, exercitationem
+                              tempore? Autem?
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <!-- single latest post end -->
+                    <!-- single latest post -->
+                    <div class="single-latest-post mb-4">
+                      <a href="single-post.html">
+                        <div class="card">
+                          <div class="card-img-wrapper">
+                            <img
+                              src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmluYW5jZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                              class="card-img-top"
+                              alt="..."
+                            />
+                            <a
+                              href="topic.html"
+                              class="category d-flex align-items-center text-decoration-none badge text-bg-primary"
+                              ><i class="lni lni-folder me-1"></i>Technology</a
+                            >
+                            <a
+                              class="comments d-flex align-items-center text-decoration-none badge text-bg-primary"
+                              href="#"
+                              ><i class="lni lni-comments me-1"></i>513</a
+                            >
+                          </div>
+                          <div class="card-body">
+                            <a
+                              class="text-decoration-none link-dark"
+                              href="single-post.html"
+                            >
+                              <h1
+                                class="card-title fw-bold"
+                                style="font-size: 22px"
+                              >
+                                Lorem ipsum dolor sit amet.
+                              </h1>
+                            </a>
+                            <div
+                              class="d-flex justify-content-between mb-2"
+                              style="font-size: 15px"
+                            >
+                              <span
+                                class="d-flex align-items-center text-secondary"
+                                ><i class="lni lni-calendar me-1"></i
+                                >10-January-2023</span
+                              >
+                              <a
+                                class="d-flex align-items-center text-decoration-none text-secondary"
+                                href="about.html"
+                                ><i class="lni lni-user me-1"></i>D. H. Shuvo</a
+                              >
+                            </div>
+                            <p class="card-text mt-3 text-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Reiciendis maiores eum temporibus voluptate
+                              non repellat doloremque voluptas, exercitationem
+                              tempore? Autem?
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <!-- single latest post end -->
+                  </div>
+                  <!-- column 1 end -->
+                  <!-- column 2 -->
+                  <div class="col-md-6">
+                    <!-- single latest post -->
+                    <div class="single-latest-post mb-4">
+                      <a href="single-post.html">
+                        <div class="card">
+                          <div class="card-img-wrapper">
+                            <img
+                              src="https://images.unsplash.com/photo-1579621970795-87facc2f976d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZmluYW5jZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                              class="card-img-top"
+                              alt="..."
+                            />
+                            <a
+                              href="topic.html"
+                              class="category d-flex align-items-center text-decoration-none badge text-bg-primary"
+                              ><i class="lni lni-folder me-1"></i>Finance</a
+                            >
+                            <a
+                              class="comments d-flex align-items-center text-decoration-none badge text-bg-primary"
+                              href="#"
+                              ><i class="lni lni-comments me-1"></i>13</a
+                            >
+                          </div>
+                          <div class="card-body">
+                            <a
+                              class="text-decoration-none link-dark"
+                              href="single-post.html"
+                            >
+                              <h1
+                                class="card-title fw-bold"
+                                style="font-size: 22px"
+                              >
+                                Lorem ipsum dolor sit amet.
+                              </h1>
+                            </a>
+                            <div
+                              class="d-flex justify-content-between mb-2"
+                              style="font-size: 15px"
+                            >
+                              <span
+                                class="d-flex align-items-center text-secondary"
+                                ><i class="lni lni-calendar me-1"></i
+                                >10-January-2023</span
+                              >
+                              <a
+                                class="d-flex align-items-center text-decoration-none text-secondary"
+                                href="about.html"
+                                ><i class="lni lni-user me-1"></i>D. H. Shuvo</a
+                              >
+                            </div>
+                            <p class="card-text mt-3 text-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Reiciendis maiores eum temporibus voluptate
+                              non repellat doloremque voluptas, exercitationem
+                              tempore? Autem?
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <!-- single latest post end -->
+                    <!-- single latest post -->
+                    <div class="single-latest-post mb-4">
+                      <a href="single-post.html">
+                        <div class="card">
+                          <div class="card-img-wrapper">
+                            <img
+                              src="https://images.unsplash.com/photo-1690184432588-81068877d852?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80"
+                              class="card-img-top"
+                              alt="..."
+                            />
+                            <a
+                              href="topic.html"
+                              class="category d-flex align-items-center text-decoration-none badge text-bg-primary"
+                              ><i class="lni lni-folder me-1"></i>Nature</a
+                            >
+                            <a
+                              class="comments d-flex align-items-center text-decoration-none badge text-bg-primary"
+                              href="#"
+                              ><i class="lni lni-comments me-1"></i>13</a
+                            >
+                          </div>
+                          <div class="card-body">
+                            <a
+                              class="text-decoration-none link-dark"
+                              href="single-post.html"
+                            >
+                              <h1
+                                class="card-title fw-bold"
+                                style="font-size: 22px"
+                              >
+                                Lorem ipsum dolor sit amet.
+                              </h1>
+                            </a>
+                            <div
+                              class="d-flex justify-content-between mb-2"
+                              style="font-size: 15px"
+                            >
+                              <span
+                                class="d-flex align-items-center text-secondary"
+                                ><i class="lni lni-calendar me-1"></i
+                                >10-January-2023</span
+                              >
+                              <a
+                                class="d-flex align-items-center text-decoration-none text-secondary"
+                                href="about.html"
+                                ><i class="lni lni-user me-1"></i>D. H. Shuvo</a
+                              >
+                            </div>
+                            <p class="card-text mt-3 text-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Reiciendis maiores eum temporibus voluptate
+                              non repellat doloremque voluptas, exercitationem
+                              tempore? Autem?
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <!-- single latest post end -->
+                    <!-- single latest post -->
+                    <div class="single-latest-post mb-4">
+                      <a href="single-post.html">
+                        <div class="card">
+                          <div class="card-img-wrapper">
+                            <img
+                              src="https://images.unsplash.com/photo-1496065187959-7f07b8353c55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHRlY2h8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                              class="card-img-top"
+                              alt="..."
+                            />
+                            <a
+                              href="topic.html"
+                              class="category d-flex align-items-center text-decoration-none badge text-bg-primary"
+                              ><i class="lni lni-folder me-1"></i>Technology</a
+                            >
+                            <a
+                              class="comments d-flex align-items-center text-decoration-none badge text-bg-primary"
+                              href="#"
+                              ><i class="lni lni-comments me-1"></i>78</a
+                            >
+                          </div>
+                          <div class="card-body">
+                            <a
+                              class="text-decoration-none link-dark"
+                              href="single-post.html"
+                            >
+                              <h1
+                                class="card-title fw-bold"
+                                style="font-size: 22px"
+                              >
+                                Lorem ipsum dolor sit amet.
+                              </h1>
+                            </a>
+                            <div
+                              class="d-flex justify-content-between mb-2"
+                              style="font-size: 15px"
+                            >
+                              <span
+                                class="d-flex align-items-center text-secondary"
+                                ><i class="lni lni-calendar me-1"></i
+                                >10-January-2023</span
+                              >
+                              <a
+                                class="d-flex align-items-center text-decoration-none text-secondary"
+                                href="about.html"
+                                ><i class="lni lni-user me-1"></i>D. H. Shuvo</a
+                              >
+                            </div>
+                            <p class="card-text mt-3 text-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Reiciendis maiores eum temporibus voluptate
+                              non repellat doloremque voluptas, exercitationem
+                              tempore? Autem?
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <!-- single latest post end -->
+                    <!-- single latest post -->
+                    <div class="single-latest-post mb-4">
+                      <a href="single-post.html">
+                        <div class="card">
+                          <div class="card-img-wrapper">
+                            <img
+                              src="https://images.unsplash.com/photo-1688149013444-da644d290749?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE2fGFldTZyTC1qNmV3fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+                              class="card-img-top"
+                              alt="..."
+                            />
+                            <a
+                              href="topic.html"
+                              class="category d-flex align-items-center text-decoration-none badge text-bg-primary"
+                              ><i class="lni lni-folder me-1"></i>Business</a
+                            >
+                            <a
+                              class="comments d-flex align-items-center text-decoration-none badge text-bg-primary"
+                              href="#"
+                              ><i class="lni lni-comments me-1"></i>78</a
+                            >
+                          </div>
+                          <div class="card-body">
+                            <a
+                              class="text-decoration-none link-dark"
+                              href="single-post.html"
+                            >
+                              <h1
+                                class="card-title fw-bold"
+                                style="font-size: 22px"
+                              >
+                                Lorem ipsum dolor sit amet.
+                              </h1>
+                            </a>
+                            <div
+                              class="d-flex justify-content-between mb-2"
+                              style="font-size: 15px"
+                            >
+                              <span
+                                class="d-flex align-items-center text-secondary"
+                                ><i class="lni lni-calendar me-1"></i
+                                >10-January-2023</span
+                              >
+                              <a
+                                class="d-flex align-items-center text-decoration-none text-secondary"
+                                href="about.html"
+                                ><i class="lni lni-user me-1"></i>D. H. Shuvo</a
+                              >
+                            </div>
+                            <p class="card-text mt-3 text-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Reiciendis maiores eum temporibus voluptate
+                              non repellat doloremque voluptas, exercitationem
+                              tempore? Autem?
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <!-- single latest post end -->
+                  </div>
+                  <!-- column 2 end -->
+                </div>
+                <!-- row end -->
+              </div>
+              <!-- pagination -->
+              <nav aria-label="...">
+                <ul class="pagination justify-content-center mb-0 mt-3">
+                  <li class="page-item disabled">
+                    <span class="page-link">Previous</span>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li class="page-item" aria-current="page">
+                    <a class="page-link" href="#">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">3</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+              <!-- pagination end -->
+            </div>
+            <!-- latest posts end -->
+            <!-- sidebar -->
+            <div class="col-lg-4 ps-lg-5">
+              <div class="sidebar">
+                <!-- subscribe widget -->
+                <div class="subscribe-widget mb-4 pb-4">
+                  <h4 class="sidebar-title my-3">Newsletter</h4>
+                  <form class="d-flex" action="">
+                    <input
+                      class="form-control me-2"
+                      type="email"
+                      placeholder="Email Address"
+                    />
+                    <button class="btn btn-primary" type="submit">
+                      Subscribe
+                    </button>
+                  </form>
+                </div>
+                <!-- subscribe widget end -->
+                <!-- facebook page widget -->
+                <div class="facebook-page-widget mb-4 pb-4">
+                  <h4 class="sidebar-title my-3">Follow me on Facebook</h4>
+                  <div
+                    class="fb-page"
+                    data-href="https://www.facebook.com/facebook"
+                    data-small-header="false"
+                    data-adapt-container-width="true"
+                    data-hide-cover="false"
+                    data-show-facepile="true"
+                  >
+                    <blockquote
+                      cite="https://www.facebook.com/facebook"
+                      class="fb-xfbml-parse-ignore"
+                    >
+                      <a href="https://www.facebook.com/facebook">Facebook</a>
+                    </blockquote>
+                  </div>
+                </div>
+                <!-- facebook page widget end -->
+                <!-- popular posts widget -->
+                <div class="popular-posts-widget mb-4 pb-4">
+                  <h4 class="sidebar-title my-3">Popular Posts</h4>
+                  <ul class="bg-light p-3 border rounded">
+                    <!-- single popular post -->
+                    <li
+                      class="d-flex align-items-center border-bottom pb-3 mb-3"
+                    >
+                      <a href="single-post.html">
+                        <img
+                          src="https://images.unsplash.com/photo-1690263914767-963579f9620c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60"
+                          class="border rounded me-2"
+                          width="80px"
+                          height="80px"
+                          style="object-fit: cover"
+                          alt=""
+                        />
+                      </a>
+                      <div class="post-info">
+                        <a
+                          class="text-decoration-none link-dark"
+                          href="single-post.html"
+                        >
+                          <h3 class="mb-2" style="font-size: 16px">
+                            Lorem ipsum dolor sit amet consectetur.
+                          </h3>
+                        </a>
+                        <div class="d-flex justify-content-between">
+                          <span
+                            class="text-secondary d-flex align-items-center"
+                            style="font-size: 14px"
+                            ><i class="lni lni-calendar me-1"></i
+                            >11-March-2022</span
+                          >
+                          <span class="d-flex align-items-center text-secondary"
+                            ><i class="lni lni-comments me-1"></i>320</span
+                          >
+                        </div>
+                      </div>
+                    </li>
+                    <!-- single popular post end -->
+                    <!-- single popular post -->
+                    <li
+                      class="d-flex align-items-center border-bottom pb-3 mb-3"
+                    >
+                      <a href="single-post.html">
+                        <img
+                          src="https://images.unsplash.com/photo-1689890076926-afb4add0bc86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMzJ8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+                          class="border rounded me-2"
+                          width="80px"
+                          height="80px"
+                          style="object-fit: cover"
+                          alt=""
+                        />
+                      </a>
+                      <div class="post-info">
+                        <a
+                          class="text-decoration-none link-dark"
+                          href="single-post.html"
+                        >
+                          <h3 class="mb-2" style="font-size: 16px">
+                            Lorem ipsum dolor sit amet consectetur.
+                          </h3>
+                        </a>
+                        <div class="d-flex justify-content-between">
+                          <span
+                            class="text-secondary d-flex align-items-center"
+                            style="font-size: 14px"
+                            ><i class="lni lni-calendar me-1"></i
+                            >11-March-2022</span
+                          >
+                          <span class="d-flex align-items-center text-secondary"
+                            ><i class="lni lni-comments me-1"></i>320</span
+                          >
+                        </div>
+                      </div>
+                    </li>
+                    <!-- single popular post end -->
+                    <!-- single popular post -->
+                    <li class="d-flex align-items-center">
+                      <a href="single-post.html">
+                        <img
+                          src="https://images.unsplash.com/photo-1682417844065-07961597146e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60"
+                          class="border rounded me-2"
+                          width="80px"
+                          height="80px"
+                          style="object-fit: cover"
+                          alt=""
+                        />
+                      </a>
+                      <div class="post-info">
+                        <a
+                          class="text-decoration-none link-dark"
+                          href="single-post.html"
+                        >
+                          <h3 class="mb-2" style="font-size: 16px">
+                            Lorem ipsum dolor sit amet consectetur.
+                          </h3>
+                        </a>
+                        <div class="d-flex justify-content-between">
+                          <span
+                            class="text-secondary d-flex align-items-center"
+                            style="font-size: 14px"
+                            ><i class="lni lni-calendar me-1"></i
+                            >11-March-2022</span
+                          >
+                          <span class="d-flex align-items-center text-secondary"
+                            ><i class="lni lni-comments me-1"></i>320</span
+                          >
+                        </div>
+                      </div>
+                    </li>
+                    <!-- single popular post end -->
+                  </ul>
+                </div>
+                <!-- popular posts widget end -->
+                <!-- topics widget -->
+                <div class="topics-widget pb-4 mb-4">
+                  <h4 class="sidebar-title my-3">Topics</h4>
+                  <div
+                    class="bg-light p-3 rounded border"
+                    style="padding-bottom: 10px !important"
+                  >
+                    <a
+                      href="topic.html"
+                      class="badge text-bg-dark text-decoration-none me-2 mb-2"
+                      >Fashion</a
+                    >
+                    <a
+                      href="topic.html"
+                      class="badge text-bg-dark text-decoration-none me-2 mb-2"
+                      >Finance</a
+                    >
+                    <a
+                      href="topic.html"
+                      class="badge text-bg-dark text-decoration-none me-2 mb-2"
+                      >Technology</a
+                    >
+                    <a
+                      href="topic.html"
+                      class="badge text-bg-dark text-decoration-none me-2 mb-2"
+                      >Nature</a
+                    >
+                    <a
+                      href="topic.html"
+                      class="badge text-bg-dark text-decoration-none me-2 mb-2"
+                      >Travel</a
+                    >
+                    <a
+                      href="topic.html"
+                      class="badge text-bg-dark text-decoration-none me-2 mb-2"
+                      >Lifestyle</a
+                    >
+                    <a
+                      href="topic.html"
+                      class="badge text-bg-dark text-decoration-none me-2 mb-2"
+                      >Business</a
+                    >
+                  </div>
+                </div>
+                <!-- topics widget end -->
+                <!-- top comments widget -->
+                <div class="top-comments-widget pb-4 mb-4">
+                  <h4 class="sidebar-title my-3">Top Comments</h4>
+                  <ul class="bg-light p-3 rounded border">
+                    <!-- single top comment -->
+                    <li
+                      class="text-decoration-none list-unstyled border-bottom pb-2 mb-2"
+                    >
+                      <a
+                        href="#"
+                        class="link-dark text-decoration-none"
+                        style="font-size: 14px"
+                        >Lorem ipsum dolor sit, amet consectetur
+                        adipisicing<span class="fs-5">...</span></a
+                      >
+                    </li>
+                    <!-- single top comment end -->
+                    <!-- single top comment -->
+                    <li
+                      class="text-decoration-none list-unstyled border-bottom pb-2 mb-2"
+                    >
+                      <a
+                        href="#"
+                        class="link-dark text-decoration-none"
+                        style="font-size: 14px"
+                        >Lorem ipsum dolor sit, amet consectetur
+                        adipisicing<span class="fs-5">...</span></a
+                      >
+                    </li>
+                    <!-- single top comment end -->
+                    <!-- single top comment -->
+                    <li class="text-decoration-none list-unstyled">
+                      <a
+                        href="#"
+                        class="link-dark text-decoration-none"
+                        style="font-size: 14px"
+                        >Lorem ipsum dolor sit, amet consectetur
+                        adipisicing<span class="fs-5">...</span></a
+                      >
+                    </li>
+                    <!-- single top comment end -->
+                  </ul>
+                </div>
+                <!-- top comments widget end -->
+                <!-- total visitors widget -->
+                <div class="total-visitors-widget">
+                  <h4 class="sidebar-title my-3">Total Visitors</h4>
+                  <div class="bg-light p-3 rounded border">
+                    <h5>15,235,532</h5>
+                  </div>
+                </div>
+                <!-- total visitors widget end -->
+              </div>
+            </div>
+            <!-- sidebar end -->
+          </div>
+        </div>
+      </section>
+      <!-- latest posts and widgets section end -->
+    </main>
+    <!-- main contents end -->
+    <!-- footer section -->
+    <footer id="footer-section" class="py-4 bg-light border-top">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-md-0 mb-4 text-center text-md-start">
+            <span class="text-secondary" style="font-size: 14px"
+              >&copy; <a href="about.html">D. H. Shuvo</a>, All Rights
+              Reserved</span
+            >
+          </div>
+          <div class="col-md-6 text-md-end text-center">
+            <a class="text-decoration-none link-secondary" href="#">
+              <i class="lni lni-facebook fs-4 me-2"></i>
+            </a>
+            <a class="text-decoration-none link-secondary" href="#">
+              <i class="lni lni-twitter fs-4 me-2"></i>
+            </a>
+            <a class="text-decoration-none link-secondary" href="#">
+              <i class="lni lni-instagram fs-4 me-2"></i>
+            </a>
+            <a class="text-decoration-none link-secondary" href="#">
+              <i class="lni lni-youtube fs-4 me-2"></i>
+            </a>
+            <a class="text-decoration-none link-secondary" href="#">
+              <i class="lni lni-linkedin fs-4"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section end -->
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0
+.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1
+/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- owl carousel js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- main js -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
