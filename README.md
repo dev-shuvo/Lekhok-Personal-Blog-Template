@@ -22,7 +22,7 @@ A personal blog template built with Bootstrap 5
 
 ## Preview
 
-[See live demo]()
+[See live demo](https://dev-shuvo.github.io/Lekhok-Personal-Blog-Template/)
 
 | ![](preview.png) |
 | ---------------- |
